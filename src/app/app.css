@@ -1,0 +1,49 @@
+.main-layout { display: flex; flex-direction: column; }
+
+.banner {
+  background-color: #fce4ec; /* Rosa muy suave */
+  padding: 40px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8bbd0; /* Rosa un poco más intenso */
+  min-height: 400px;
+}
+
+.hero-image-placeholder {
+  width: 400px;
+  height: 300px;
+  background: #ccc; /* Espacio reservado para tu foto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* El fondo de toda la página */
+.site-wrapper {
+  background-color: #fce4ec; /* El rosa suave */
+  min-height: 100vh;
+  padding: 20px; /* Esto deja ver el rosa alrededor */
+}
+
+/* La capa blanca central */
+.content-box {
+  background-color: white;
+  max-width: 1200px; /* Ajusta el ancho de tu web */
+  margin: 0 auto;    /* Esto lo centra */
+  min-height: 90vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra elegante */
+  border-radius: 8px; /* Bordes redondeados */
+}

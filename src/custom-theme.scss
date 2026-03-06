@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+// 1. Core de Material
+@include mat.core();
+
+// 2. Definición del tema con la densidad correcta como objeto
+$mi-tema: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$rose-palette,
+    tertiary: mat.$red-palette,
+  ),
+  typography: (
+    brand-family: 'Roboto',
+    bold-weight: 700
+  ),
+  density: (
+    scale: 0
+  )
+));
+
+// 3. Aplicación de estilos
+@include mat.all-component-themes($mi-tema);

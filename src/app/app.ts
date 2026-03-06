@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+
+import { MenuDesplegable } from './features/dropdown/components/menu-desplegable/menu-desplegable';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [MenuDesplegable],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

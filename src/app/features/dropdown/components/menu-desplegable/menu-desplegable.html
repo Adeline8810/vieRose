@@ -1,0 +1,12 @@
+<button mat-button [matMenuTriggerFor]="menuPrincipal">Opciones ▼</button>
+
+<mat-menu #menuPrincipal="matMenu">
+  <button mat-menu-item>Opción Simple</button>
+
+  <button mat-menu-item [matMenuTriggerFor]="subMenu">Configuración ▶</button>
+</mat-menu>
+
+<mat-menu #subMenu="matMenu">
+  <button mat-menu-item>Perfil</button>
+  <button mat-menu-item>Privacidad</button>
+</mat-menu>

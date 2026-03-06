@@ -25,7 +25,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+  "@angular/material/prebuilt-themes/rose-red.css"
             ]
           },
           "configurations": {
@@ -82,11 +83,15 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+             "src/styles.scss",
+  "@angular/material/prebuilt-themes/rose-red.css"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
