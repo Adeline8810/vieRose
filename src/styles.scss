@@ -14,10 +14,10 @@ html {
   box-sizing: border-box;
 }
 
-body {
+body, button, .nav-links {
   background-color: #fff9fb; /* El rosa suave de fondo */
   height: 100%;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Moderna y legible */
 }
 
 /* El contenedor que centra todo */
@@ -27,4 +27,8 @@ body {
   background: #ffffff;
   min-height: 100vh;
   box-shadow: 0 0 20px rgba(0,0,0,0.03);
+}
+
+h1, h2, .logo {
+  font-family: 'Playfair Display', serif; /* Elegante para títulos */
 }

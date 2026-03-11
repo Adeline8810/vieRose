@@ -7,13 +7,13 @@
 
 .feature-card {
   background-color: #ffc2d1; /* El tono rosado suave */
-  border-radius: 20px; /* Bordes redondeados */
+  border-radius: 40px 10px 40px 10px;/* Bordes redondeados */
   padding: 40px 20px;
   text-align: center;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,11 @@
 }
 
 .feature-card:hover {
-  transform: translateY(-8px); /* Efecto de elevación */
+  transform: scale(1.05) rotate(1deg);/* Efecto de elevación */
   background-color: #f799b5; /* Un tono un poquito más fuerte al pasar el mouse */
   box-shadow: 0 8px 20px rgba(255, 150, 180, 0.4);
+}
+
+.card-style {
+  box-shadow: 0 10px 30px rgba(216, 27, 96, 0.1); /* Sombra rosada muy suave */
 }

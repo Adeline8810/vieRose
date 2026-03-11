@@ -7,8 +7,25 @@
   text-align: center;
   margin: 20px;
   border-radius: 30px; /* Bordes suaves estilo boutique */
+  padding: 0 40px;
 }
 
+.hero-content {
+  flex: 1; /* El texto ocupa la mitad */
+  text-align: left;
+}
+.hero-image {
+  flex: 1; /* La imagen ocupa la otra mitad */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 80%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
 .hero-content h1 {
   font-size: 3.5rem;
   color: #d81b60;
@@ -31,4 +48,8 @@
 .shop-now-btn:hover {
   background-color: #ad1457;
   transform: scale(1.05);
+}
+
+.card-style {
+  box-shadow: 0 10px 30px rgba(216, 27, 96, 0.1); /* Sombra rosada muy suave */
 }

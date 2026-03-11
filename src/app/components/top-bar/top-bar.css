@@ -1,0 +1,12 @@
+.top-bar {
+  background-color: #fce4ec;
+  color: #d81b60;
+  text-align: center;
+  padding: 8px 0; /* Solo un poco de espacio arriba y abajo */
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 100%;
+}
+.mi-icono {
+  color: #d06caf; /* ¡Aquí controlas el rosa perfectamente! */
+}
