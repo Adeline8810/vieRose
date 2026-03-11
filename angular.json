@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "proyectoOnsengo": {
+    "vieRose": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "proyectoOnsengo:build:production"
+              "buildTarget": "vieRose:build:production"
             },
             "development": {
-              "buildTarget": "proyectoOnsengo:build:development"
+              "buildTarget": "vieRose:build:development"
             }
           },
           "defaultConfiguration": "development"

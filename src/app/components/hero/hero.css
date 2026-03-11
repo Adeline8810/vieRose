@@ -53,3 +53,23 @@
 .card-style {
   box-shadow: 0 10px 30px rgba(216, 27, 96, 0.1); /* Sombra rosada muy suave */
 }
+
+
+/* Esto hace que en celulares la imagen se apile debajo del texto */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Cambia de lado-a-lado a uno debajo del otro */
+    height: auto;           /* Ajusta el alto al contenido */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;              /* Pone la imagen arriba del texto */
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    max-width: 100%;        /* La imagen ocupará todo el ancho disponible */
+  }
+}

@@ -17,5 +17,5 @@ import { TopBar } from './components/top-bar/top-bar';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('proyectoOnsengo');
+  protected readonly title = signal('vieRose');
 }
