@@ -1,0 +1,27 @@
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.feature-card {
+  background-color: #ffc2d1; /* El tono rosado suave */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 150, 180, 0.2);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px); /* Efecto de elevación */
+  background-color: #f799b5; /* Un tono un poquito más fuerte al pasar el mouse */
+  box-shadow: 0 8px 20px rgba(255, 150, 180, 0.4);
+}

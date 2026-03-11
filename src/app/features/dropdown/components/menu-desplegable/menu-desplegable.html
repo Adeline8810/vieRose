@@ -1,12 +1,35 @@
-<button mat-button [matMenuTriggerFor]="menuPrincipal">Opciones ▼</button>
+<div class="menu-container">
+  <mat-accordion class="custom-accordion">
 
-<mat-menu #menuPrincipal="matMenu">
-  <button mat-menu-item>Opción Simple</button>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          ✨ SOBRE NOSOTROS
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Nuestra historia con mucho brillo.</p>
+    </mat-expansion-panel>
 
-  <button mat-menu-item [matMenuTriggerFor]="subMenu">Configuración ▶</button>
-</mat-menu>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          🌸 SERVICIOS
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="menu-opciones">
+        <a href="#">Diseño Web</a>
+        <a href="#">Marketing</a>
+      </div>
+    </mat-expansion-panel>
 
-<mat-menu #subMenu="matMenu">
-  <button mat-menu-item>Perfil</button>
-  <button mat-menu-item>Privacidad</button>
-</mat-menu>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          🪄 PORTAFOLIO
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Mira nuestros trabajos destacados.</p>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>

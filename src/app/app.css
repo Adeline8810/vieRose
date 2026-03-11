@@ -1,28 +1,29 @@
-.main-layout { display: flex; flex-direction: column; }
-
-
-
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #f8bbd0; /* Rosa un poco más intenso */
-  min-height: 400px;
-}
-
-.hero-image-placeholder {
-  width: 400px;
-  height: 300px;
-  background: #ccc; /* Espacio reservado para tu foto */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* El fondo de toda la página */
 .site-wrapper {
-  background-color: #fce4ec; /* El rosa suave */
-  min-height: 100vh;
-  padding: 20px; /* Esto deja ver el rosa alrededor */
+  max-width: 1200px; /* Centra todo el contenido */
+  margin: 0 auto;
+  background-color: #fff9fb; /* Un rosa casi blanco de fondo */
+  font-family: 'Helvetica', sans-serif;
 }
 
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.cat-card {
+  background: #ffc2d1; /* El color de tus botones */
+  border-radius: 20px; /* Bordes suaves */
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.1);
+}

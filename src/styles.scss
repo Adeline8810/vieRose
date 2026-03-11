@@ -1,57 +1,30 @@
-html, body { height: 100%; }
-/* src/styles.scss */
-body {
-  background-color: #fce4ec; /* Rosa de fondo */
-  padding: 40px;
-  font-family: 'Playfair Display', serif;
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (primary: mat.$rose-palette, tertiary: mat.$red-palette),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #fdf2f5;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #fff9fb; /* El rosa suave de fondo */
+  height: 100%;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* El contenedor que centra todo */
 .site-wrapper {
-  min-height: 100vh;
-  background-color: #fdf2f5; /* Un tono rosado muy suave de fondo */
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-/* --- La capa blanca central --- */
-.content-box {
-  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;           /* Centrado perfecto */
-  background: #ffffff;      /* Fondo blanco */
-  border-radius: 15px;      /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  overflow: hidden;         /* Esto es lo que oculta los bordes del banner */
-  padding: 0;               /* Sin espacio interno para que el banner toque los bordes */
-}
-
-/* Ajuste del banner y navbar */
-.banner {
-  width: 100%;
-  margin: 0;
-  display: block;
-  /* Ajusta la altura para que no sea tan excesiva */
-  height: 300px;
-  background-color: #ffcce0; /* Color de fondo rosa */
-}
-.navbar {
-  display: flex;
-  justify-content: center; /* Centramos el menú como en la referencia */
-  padding: 15px 0;
-  background-color: #ffffff;
-  border-bottom: 2px solid #fce4ec; /* Una línea rosa sutil para separar */
-}
-
-.main-content {
-  padding: 20px; /* Aquí sí puedes poner espacio para que el texto respire */
-}
-
-.mat-mdc-button {
-  color: #d81b60 !important; /* Un rosa fuerte corporativo */
-  font-weight: 600 !important;
-  text-transform: uppercase;
+  margin: 0 auto; /* Centrado horizontal */
+  background: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0,0,0,0.03);
 }

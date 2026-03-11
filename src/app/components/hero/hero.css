@@ -1,0 +1,34 @@
+.hero-container {
+  height: 500px;
+  background: linear-gradient(120deg, #ffebf0, #ffdbe6); /* Degradado suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-radius: 30px; /* Bordes suaves estilo boutique */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #d81b60;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.shop-now-btn {
+  background-color: #d81b60;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: #ad1457;
+  transform: scale(1.05);
+}

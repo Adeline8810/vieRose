@@ -1,0 +1,40 @@
+/* 1. Limpiar el contenedor del acordeón */
+.mat-mdc-accordion {
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+/* 2. Estilo del panel: sin bordes, sin capas blancas */
+.mat-mdc-expansion-panel {
+  background: linear-gradient(135deg, #ffcce0 0%, #ffb3cc 100%) !important;
+  border-radius: 15px !important;
+  box-shadow: none !important; /* Eliminamos la sombra que genera la capa */
+  margin-bottom: 8px !important;
+  border: none !important;
+}
+
+/* 3. Ajustar el header (donde haces clic) */
+.mat-expansion-panel-header {
+  height: 60px !important;
+  border-radius: 15px !important;
+  background: transparent !important;
+}
+
+/* 4. Estilo de las letras y texto para que se vean bien */
+.mat-expansion-panel-header-title {
+  color: #8b3a58 !important; /* Un tono rosado oscuro elegante */
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+}
+
+/* 5. Fondo del contenido desplegado */
+.mat-expansion-panel-body {
+  background: rgba(255, 255, 255, 0.4) !important;
+  padding: 15px !important;
+  border-radius: 0 0 15px 15px;
+}
+
+/* 6. Eliminar la línea gris que pone Material por defecto */
+.mat-mdc-expansion-panel::before {
+  display: none !important;
+}

@@ -1,11 +1,17 @@
 import { Component, signal } from '@angular/core';
 
 
-import { MenuDesplegable } from './features/dropdown/components/menu-desplegable/menu-desplegable';
+import { CommonModule } from '@angular/common'; // Importante
+import { Navbar } from './components/navbar/navbar';
+import { Hero } from './components/hero/hero';
+import { Features } from './components/features/features';
+import { ProductGrid} from './components/product-grid/product-grid';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [MenuDesplegable],
+  imports: [Navbar,Hero,Features,ProductGrid],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
