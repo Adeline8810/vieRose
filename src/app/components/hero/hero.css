@@ -60,8 +60,22 @@
   .hero-container {
     flex-direction: column; /* Cambia de lado-a-lado a uno debajo del otro */
     height: auto;           /* Ajusta el alto al contenido */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+  }
+
+  .hero-container h1 {
+    font-size: 1.8rem; /* Título más pequeño en móvil */
+    margin-bottom: 10px;
+  }
+
+  .hero-container p {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+
+  .shop-now-btn {
+    padding: 10px 20px; /* Botón más compacto */
+    font-size: 0.9rem;
   }
 
   .hero-image {
@@ -71,5 +85,21 @@
 
   .hero-image img {
     max-width: 100%;        /* La imagen ocupará todo el ancho disponible */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    margin: 10px; /* Reducimos margen para ganar espacio */
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 24px; /* Hacemos el título más pequeño para móvil */
+  }
+
+  p {
+    font-size: 14px;
   }
 }

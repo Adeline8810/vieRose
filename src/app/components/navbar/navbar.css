@@ -40,3 +40,23 @@
   font-size: 1.2rem;
   margin-left: 15px;
 }
+
+@media (max-width: 600px) {
+  /* Hacemos el Navbar más pequeño y flexible */
+  nav, .navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos bajen de línea si no caben */
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 10px;
+  }
+
+  /* Reducimos el tamaño de las letras del menú en móvil */
+  .nav-links, .menu-item {
+
+    display: flex;
+    gap: 10px; /* Menor espacio entre opciones */
+    font-size: 0.8rem; /* Fuente más chica */
+  }
+}

@@ -55,3 +55,11 @@ background: white;
 .card-style {
   box-shadow: 0 10px 30px rgba(216, 27, 96, 0.1); /* Sombra rosada muy suave */
 }
+
+@media (max-width: 600px) {
+  .product-grid-container { /* Ajusta el nombre de tu clase si es diferente */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
+    gap: 10px;
+  }
+}
