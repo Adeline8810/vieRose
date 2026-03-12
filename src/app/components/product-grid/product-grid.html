@@ -1,10 +1,11 @@
 <section class="product-grid-section">
   <h2>Notre Sélection</h2>
   <div class="grid">
-    <div class="product-card" *ngFor="let item of [1,2,3,4]">
-      <div class="image-placeholder"></div>
-      <h3>NOM DU PRODUIT</h3>
-      <p>99.99€</p>
+    <div class="product-card" *ngFor="let item of productos">
+      <img [src]="item.imagen" [alt]="item.nombre" class="product-img">
+
+      <h3>{{ item.nombre }}</h3>
+      <p>{{ item.precio }}</p>
       <button>Voir Les Détails</button>
     </div>
   </div>

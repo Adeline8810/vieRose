@@ -130,3 +130,30 @@ background: white;
   color: #4a4a4a;
   font-weight: bold;
 }
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #fce4ec; /* Un borde suave */
+  border-radius: 20px;
+}
+
+.product-img {
+  width: 100%;
+  height: 250px; /* Ajusta a la altura que prefieras */
+  object-fit: cover; /* Esto hace que la foto no se deforme */
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #d63384; /* Tu color rosa intenso */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
