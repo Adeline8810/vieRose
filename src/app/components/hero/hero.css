@@ -2,13 +2,15 @@
   height: 500px;
   background: linear-gradient(120deg, #ffebf0, #ffdbe6); /* Degradado suave */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   margin: 20px;
   border-radius: 30px; /* Bordes suaves estilo boutique */
-  padding: 0 40px;
+  padding: 60px 10%;
   flex-wrap: wrap;
+  background-color: #fdf6f6;
+
 }
 
 .hero-content {
@@ -22,20 +24,22 @@
 }
 
 .hero-image img {
-  max-width: 80%; /* Ajusta el tamaño de la imagen */
+  max-width: 100%;/* Ajusta el tamaño de la imagen */
   height: auto;
   border-radius: 20px;
   object-fit: cover;
 }
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
   color: #d81b60;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .shop-now-btn {
   background-color: #d81b60;
+
   color: white;
   border: none;
   padding: 15px 40px;
@@ -44,6 +48,16 @@
   cursor: pointer;
   margin-top: 20px;
   transition: transform 0.3s ease, background-color 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  gap: 60px;
+
+
+
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
 .shop-now-btn:hover {
@@ -103,4 +117,12 @@
   p {
     font-size: 14px;
   }
+}
+
+.hero-content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #777;
+  max-width: 400px;
+  margin-bottom: 30px;
 }
