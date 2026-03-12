@@ -157,3 +157,19 @@ background: white;
   border-radius: 10px;
   cursor: pointer;
 }
+
+.btn-comprar {
+  display: inline-block;
+  background-color: #25d366; /* El color verde de WhatsApp */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none; /* Quita el subrayado */
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #128c7e; /* Un verde más oscuro al pasar el ratón */
+}

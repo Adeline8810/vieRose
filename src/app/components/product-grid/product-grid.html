@@ -3,10 +3,12 @@
   <div class="grid">
     <div class="product-card" *ngFor="let item of productos">
       <img [src]="item.imagen" [alt]="item.nombre" class="product-img">
-
       <h3>{{ item.nombre }}</h3>
       <p>{{ item.precio }}</p>
-      <button>Voir Les Détails</button>
+
+      <a [href]="generarLinkWhatsApp(item.nombre)" target="_blank" class="btn-comprar">
+        Commander via WhatsApp
+      </a>
     </div>
   </div>
 </section>
