@@ -1,8 +1,10 @@
 .features-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas iguales */
-  gap: 20px;
+  gap: 10px;
   padding: 40px 20px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .feature-card {
@@ -28,4 +30,29 @@
 
 .card-style {
   box-shadow: 0 10px 30px rgba(216, 27, 96, 0.1); /* Sombra rosada muy suave */
+}
+
+/* Esto se aplica a pantallas de menos de 768px (celulares y tablets) */
+@media (max-width: 768px) {
+  .features-container {
+    /* Cambiamos de 4 columnas a solo 2 */
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 10px; /* Reducimos el espacio vacío */
+    gap: 15px;
+  }
+
+  .feature-card {
+    /* Aseguramos que el texto no se corte y sea legible */
+    font-size: 14px;
+    padding: 15px;
+    width: 100%; /* Que ocupe su celda del grid */
+    box-sizing: border-box;
+  }
+}
+
+/* Si quieres que en celulares muy pequeños se vea solo 1 columna */
+@media (max-width: 400px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
 }

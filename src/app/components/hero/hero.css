@@ -8,6 +8,7 @@
   margin: 20px;
   border-radius: 30px; /* Bordes suaves estilo boutique */
   padding: 0 40px;
+  flex-wrap: wrap;
 }
 
 .hero-content {

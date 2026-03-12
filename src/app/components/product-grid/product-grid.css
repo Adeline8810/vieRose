@@ -1,5 +1,6 @@
 .product-grid-section {
   padding: 40px 20px;
+  flex-wrap: wrap;
 }
 
 .grid {
@@ -62,4 +63,70 @@ background: white;
     grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
     gap: 10px;
   }
+}
+
+/* Fuente para títulos principales */
+.product-grid-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #d63384; /* Un tono rosa fucsia elegante */
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo para los nombres de productos */
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #4a4a4a;
+  margin-top: 15px;
+}
+
+/* El botón 'coqueto' */
+.product-card button {
+  font-family: 'Great Vibes', cursive; /* Fuente cursiva coqueta */
+  font-size: 1.4rem;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Bordes redondeados chic */
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el ratón */
+.product-card button:hover {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5rem;
+  background-color: #d63384;
+
+  transform: scale(1.05);
+}
+
+/* Tarjeta con borde suave */
+.product-card {
+  border: 1px solid #fce4ec;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d63384; /* Color rosa */
+  text-transform: none; /* Esto evita que se fuerce a mayúsculas */
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* 4. Precio */
+.product-card p {
+  color: #4a4a4a;
+  font-weight: bold;
 }
