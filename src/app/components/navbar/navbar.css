@@ -60,3 +60,71 @@
     font-size: 0.8rem; /* Fuente más chica */
   }
 }
+
+/* Ajustes solo para pantallas de celular */
+@media (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Apila el logo, los enlaces y los iconos verticalmente */
+    align-items: center;    /* Centra todo */
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;          /* Mantener en fila pero con fuente más pequeña */
+    flex-wrap: wrap;        /* Si no caben, bajan a la siguiente fila */
+    justify-content: center;
+    gap: 10px;              /* Espacio entre enlaces */
+    padding: 0;
+    list-style: none;       /* Quita los puntos de la lista */
+    font-size: 0.8rem;      /* Reduce el tamaño del texto */
+  }
+
+  .nav-icons {
+    margin-top: 10px;       /* Un poco de espacio entre enlaces e iconos */
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.5rem; /* Ajusta este valor si sigue siendo muy grande */
+    text-align: center;
+  }
+}
+
+
+.nav-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem; /* Ajusta el tamaño de los emojis */
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.nav-icons button:hover {
+  transform: scale(1.2); /* Un pequeño efecto al pasar el mouse */
+}
+
+.nav-icons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d63384; /* El color de tu marca */
+  font-size: 24px;
+}
+
+.nav-top {
+  display: flex; /* Activa el modo flexible */
+  justify-content: center; /* Centra los elementos */
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 15px; /* Espacio entre el título y los iconos */
+  width: 100%;
+}
+
+/* Opcional: si quieres que el título sea un poco más pequeño en móvil */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+}
