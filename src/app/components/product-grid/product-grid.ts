@@ -20,7 +20,7 @@ productos = [
 
 // Agrega esto justo debajo de tu lista de productos
   generarLinkWhatsApp(nombreProducto: string): string {
-    const numeroTelefono = "51977754815"; // Cambia este número por el tuyo
+    const numeroTelefono = "33782655533"; // Cambia este número por el tuyo
     const mensaje = `Hola, estoy interesado en el vestido: ${nombreProducto}. ¿Cómo puedo realizar el pago?`;
     return `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
   }
